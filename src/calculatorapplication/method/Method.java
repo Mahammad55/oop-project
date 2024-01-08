@@ -43,4 +43,21 @@ public class Method {
         }
         return chooseNumber;
     }
+
+    public static String[] loadOperations(int calculatorNum) {
+        switch (calculatorNum) {
+            case 1 -> {
+                return new String[]{"Add", "Subtract", "Multiply", "Divide", "Power", "Square Root"};
+            }
+            case 2 -> {
+                return new String[]{"Add", "Subtract", "Multiply", "Divide", "Sin", "Cos"};
+            }
+            case 3 -> {
+                return new String[]{"Add", "Subtract", "Multiply", "Divide", "Log", "LogE", "Log10"};
+            }
+            default -> {
+                return new String[]{"Add", "Subtract", "Multiply", "Divide", "Round", "Round Floor", "Round Ceil"};
+            }
+        }
+    }
 }
