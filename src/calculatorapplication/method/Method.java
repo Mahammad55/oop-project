@@ -21,4 +21,26 @@ public class Method {
         }
         return chooseNumber;
     }
+
+    public static int numRangePicker(int leftRange, int rightRange) {
+        int chooseNumber = Integer.MAX_VALUE;
+        boolean hasChosenCorrectly = false;
+
+        while (!hasChosenCorrectly) {
+            try {
+                chooseNumber = new Scanner(System.in).nextInt();
+            } catch (InputMismatchException e) {
+                System.err.printf("Xəta: Yalnız %s-%s aralığında tam ədəd daxil etmə olar.\n", leftRange, rightRange);
+            }
+
+            if (chooseNumber >= leftRange && chooseNumber <= rightRange) {
+                hasChosenCorrectly = true;
+            }
+
+            if (!hasChosenCorrectly) {
+                System.out.printf("Zəhmət olmasa %s-%s aralığında tam ədəd daxil edin.\n", leftRange, rightRange);
+            }
+        }
+        return chooseNumber;
+    }
 }
