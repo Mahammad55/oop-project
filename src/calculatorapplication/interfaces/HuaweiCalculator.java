@@ -1,6 +1,6 @@
 package calculatorapplication.interfaces;
 
-public interface HuaweiCalculator {
+public interface HuaweiCalculator extends Calculator{
     void sin();
     void cos();
 }

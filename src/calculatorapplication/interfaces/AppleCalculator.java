@@ -1,6 +1,6 @@
 package calculatorapplication.interfaces;
 
-public interface AppleCalculator{
+public interface AppleCalculator extends Calculator{
     void power();
 
     void squareRoot();

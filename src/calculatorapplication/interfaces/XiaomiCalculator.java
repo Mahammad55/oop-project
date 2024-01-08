@@ -1,6 +1,6 @@
 package calculatorapplication.interfaces;
 
-public interface XiaomiCalculator {
+public interface XiaomiCalculator extends Calculator{
     void round();
 
     void roundFloor();

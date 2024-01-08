@@ -1,6 +1,6 @@
 package calculatorapplication.interfaces;
 
-public interface SamsungCalculator {
+public interface SamsungCalculator extends Calculator{
     void log();
 
     void logE();
