@@ -1,5 +1,11 @@
 package calculatorapplication.method;
 
+import calculatorapplication.classes.AppleCalculatorImpl;
+import calculatorapplication.classes.HuaweiCalculatorImpl;
+import calculatorapplication.classes.SamsungCalculatorImpl;
+import calculatorapplication.classes.XiaomiCalculatorImpl;
+import calculatorapplication.config.Config;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -58,6 +64,15 @@ public class Method {
             default -> {
                 return new String[]{"Add", "Subtract", "Multiply", "Divide", "Round", "Round Floor", "Round Ceil"};
             }
+        }
+    }
+
+    public static void runCalculator() {
+        switch (Config.currentCalculatorNum) {
+            case 1 -> AppleCalculatorImpl.runCalculator();
+            case 2 -> HuaweiCalculatorImpl.runCalculator();
+            case 3 -> SamsungCalculatorImpl.runCalculator();
+            case 4 -> XiaomiCalculatorImpl.runCalculator();
         }
     }
 }
