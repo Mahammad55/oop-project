@@ -4,6 +4,31 @@ import calculatorapplication.interfaces.SamsungCalculator;
 import calculatorapplication.method.Method;
 
 public class SamsungCalculatorImpl extends AbstractCalculator implements SamsungCalculator {
+    public static void runCalculator() {
+        System.out.println("Samsung runs.");
+
+        String[] listOfOperations = Method.loadOperations(3);
+
+        System.out.println("Əməliyyatı seçin.");
+        for (int i = 0; i < listOfOperations.length; i++) {
+            System.out.println(i + 1 + ": " + listOfOperations[i]);
+        }
+
+        int operationNumber = Method.numRangePicker(1, listOfOperations.length);
+
+        SamsungCalculator calculator = new SamsungCalculatorImpl();
+
+        switch (operationNumber) {
+            case 1 -> calculator.sum();
+            case 2 -> calculator.subtraction();
+            case 3 -> calculator.multiply();
+            case 4 -> calculator.divide();
+            case 5 -> calculator.log();
+            case 6 -> calculator.logE();
+            case 7 -> calculator.log10();
+        }
+    }
+
     @Override
     public void log() {
         System.out.print("İlk ədədi daxil edin: ");
