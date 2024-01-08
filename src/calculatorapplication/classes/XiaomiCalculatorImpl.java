@@ -35,6 +35,7 @@ public class XiaomiCalculatorImpl extends AbstractCalculator implements XiaomiCa
         System.out.print("Ədədi daxil edin: ");
         double num = Method.numPicker();
         System.out.printf("The round of %s is: %s\n", num, Math.round(num));
+        Method.nextOperation();
     }
 
     @Override
@@ -42,6 +43,7 @@ public class XiaomiCalculatorImpl extends AbstractCalculator implements XiaomiCa
         System.out.print("Ədədi daxil edin: ");
         double num = Method.numPicker();
         System.out.printf("The round floor of %s is: %s\n", num, Math.floor(num));
+        Method.nextOperation();
     }
 
     @Override
@@ -49,5 +51,6 @@ public class XiaomiCalculatorImpl extends AbstractCalculator implements XiaomiCa
         System.out.print("Ədədi daxil edin: ");
         double num = Method.numPicker();
         System.out.printf("The round ceil of %s is: %s\n", num, Math.ceil(num));
+        Method.nextOperation();
     }
 }

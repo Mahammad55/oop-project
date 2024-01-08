@@ -34,6 +34,7 @@ public class HuaweiCalculatorImpl extends AbstractCalculator implements HuaweiCa
         System.out.print("Ədədi daxil edin: ");
         double num = Method.numPicker();
         System.out.printf("The sin of %s is: %s\n", num, Math.sin(num));
+        Method.nextOperation();
     }
 
     @Override
@@ -41,5 +42,6 @@ public class HuaweiCalculatorImpl extends AbstractCalculator implements HuaweiCa
         System.out.print("Ədədi daxil edin: ");
         double num = Method.numPicker();
         System.out.printf("The cos of %s is: %s\n", num, Math.cos(num));
+        Method.nextOperation();
     }
 }

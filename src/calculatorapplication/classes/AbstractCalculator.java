@@ -9,6 +9,7 @@ public abstract class AbstractCalculator {
         System.out.print("İkinci ədədi daxil edin: ");
         double num2 = Method.numPicker();
         System.out.printf("%s + %s = %s\n", num1, num2, num1 + num2);
+        Method.nextOperation();
     }
 
     public void subtraction() {
@@ -17,6 +18,7 @@ public abstract class AbstractCalculator {
         System.out.print("İkinci ədədi daxil edin: ");
         double num2 = Method.numPicker();
         System.out.printf("%s - %s = %s\n", num1, num2, num1 - num2);
+        Method.nextOperation();
     }
 
     public void multiply() {
@@ -25,6 +27,7 @@ public abstract class AbstractCalculator {
         System.out.print("İkinci ədədi daxil edin: ");
         double num2 = Method.numPicker();
         System.out.printf("%s * %s = %s\n", num1, num2, num1 * num2);
+        Method.nextOperation();
     }
 
     public void divide() {
@@ -33,5 +36,6 @@ public abstract class AbstractCalculator {
         System.out.print("İkinci ədədi daxil edin: ");
         double num2 = Method.numPicker();
         System.out.printf("%s / %s = %s\n", num1, num2, num1 / num2);
+        Method.nextOperation();
     }
 }

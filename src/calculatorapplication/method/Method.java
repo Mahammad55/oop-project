@@ -5,6 +5,7 @@ import calculatorapplication.classes.HuaweiCalculatorImpl;
 import calculatorapplication.classes.SamsungCalculatorImpl;
 import calculatorapplication.classes.XiaomiCalculatorImpl;
 import calculatorapplication.config.Config;
+import calculatorapplication.program.Program;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -73,6 +74,18 @@ public class Method {
             case 2 -> HuaweiCalculatorImpl.runCalculator();
             case 3 -> SamsungCalculatorImpl.runCalculator();
             case 4 -> XiaomiCalculatorImpl.runCalculator();
+        }
+    }
+
+    public static void nextOperation() {
+        System.out.println("Əməliyyatı dəyişmək üçün 1,Kalkulyatoru dəyişmək üçün 2,Proqramı sonlandırmaq üçün 0 daxil edin.");
+
+        int chosenOperation = numRangePicker(0, 2);
+
+        switch (chosenOperation) {
+            case 0 -> System.exit(0);
+            case 1 -> Method.runCalculator();
+            default -> Program.main(null);
         }
     }
 }
