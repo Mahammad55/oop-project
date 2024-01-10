@@ -2,17 +2,22 @@
 This is a simple calculator application implemented in Java as part of an Object-Oriented Programming (OOP) project. The calculator supports basic arithmetic operations as well as additional functions specific to different calculator models.
 
 ## Features
-*Addition, subtraction, multiplication, and division operations.
+* Addition, subtraction, multiplication, and division operations.
 
-*Additional functions based on the calculator model:
 
-   *Apple Calculator: Power and square root.
+* Additional functions based on the calculator model:
+
+
+*     Apple Calculator: Power and square root.
+
    
-   *Huawei Calculator: Sine and cosine.
+*     Huawei Calculator: Sine and cosine.
+
    
-   *Samsung Calculator: Logarithm, natural logarithm, and base-10 logarithm.
+*     Samsung Calculator: Logarithm, natural logarithm, and base-10 logarithm.
+
    
-   *Xiaomi Calculator: Round, round floor, and round ceil.
+*     Xiaomi Calculator: Round, round floor, and round ceil.
 ## Usage
 To use the calculator, follow these steps:
 
